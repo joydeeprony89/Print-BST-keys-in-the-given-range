@@ -31,6 +31,7 @@ namespace Print_BST_keys_in_the_given_range
         static void PrintNodeInRange(Node root, int k1, int k2)
         {
             if (root == null) return;
+
             if (root.val > k1)
             {
                 PrintNodeInRange(root.left, k1, k2);
